@@ -1,2 +1,3 @@
 # itlab-api
-![KakaoTalk_Photo_2023-11-24-19-47-28](https://github.com/it-lab-foundation/itlab-api/assets/61870748/8c8d01c8-37ea-4aa4-8c0d-c792e22b4f35)
+
+<img width="281" alt="스크린샷 2023-11-24 오후 7 55 31" src="https://github.com/it-lab-foundation/itlab-api/assets/61870748/36c8fb51-6636-46bc-b6bf-8a29ac43c650">
