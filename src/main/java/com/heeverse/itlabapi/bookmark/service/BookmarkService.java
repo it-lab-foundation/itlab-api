@@ -1,6 +1,7 @@
 package com.heeverse.itlabapi.bookmark.service;
 
 import com.heeverse.itlabapi.bookmark.domain.entity.Bookmark;
+import com.heeverse.itlabapi.bookmark.exceptions.NotExistBookmarkException;
 import com.heeverse.itlabapi.bookmark.repository.BookmarkRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

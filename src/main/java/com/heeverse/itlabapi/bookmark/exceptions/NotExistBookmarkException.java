@@ -1,4 +1,4 @@
-package com.heeverse.itlabapi.bookmark.service;
+package com.heeverse.itlabapi.bookmark.exceptions;
 
 public class NotExistBookmarkException extends RuntimeException {
 }

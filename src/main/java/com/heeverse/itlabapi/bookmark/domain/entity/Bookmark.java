@@ -15,7 +15,7 @@ public class Bookmark extends BaseEntity {
 
     @Id
     private Long bookmarkSeq;
-    private Long memberId;
+    private String memberId;
 
 
 

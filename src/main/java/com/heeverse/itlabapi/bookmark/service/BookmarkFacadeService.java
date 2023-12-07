@@ -1,5 +1,6 @@
 package com.heeverse.itlabapi.bookmark.service;
 
+import com.heeverse.itlabapi.bookmark.domain.vo.DomainUrl;
 import com.heeverse.itlabapi.bookmark.domain.entity.Bookmark;
 import com.heeverse.itlabapi.bookmark.domain.entity.Domain;
 import com.heeverse.itlabapi.bookmark.domain.entity.Url;

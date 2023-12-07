@@ -1,4 +1,4 @@
-package com.heeverse.itlabapi.bookmark.service;
+package com.heeverse.itlabapi.bookmark.domain.vo;
 
 import lombok.Getter;
 

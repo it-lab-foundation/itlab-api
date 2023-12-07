@@ -1,5 +1,7 @@
 package com.heeverse.itlabapi.bookmark.service;
 
+import com.heeverse.itlabapi.bookmark.domain.vo.DomainUrl;
+import com.heeverse.itlabapi.bookmark.domain.vo.ShortenUrl;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;

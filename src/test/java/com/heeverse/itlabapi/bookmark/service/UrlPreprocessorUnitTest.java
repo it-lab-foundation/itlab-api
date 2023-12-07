@@ -1,5 +1,6 @@
 package com.heeverse.itlabapi.bookmark.service;
 
+import com.heeverse.itlabapi.bookmark.domain.vo.DomainUrl;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
