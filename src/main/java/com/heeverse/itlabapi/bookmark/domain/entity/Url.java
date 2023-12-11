@@ -1,11 +1,10 @@
 package com.heeverse.itlabapi.bookmark.domain.entity;
 
 import com.heeverse.itlabapi.common.BaseEntity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
+import com.heeverse.itlabapi.bookmark.domain.vo.UrlComponent;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
@@ -17,15 +16,22 @@ import lombok.NoArgsConstructor;
 public class Url extends BaseEntity {
 
     @Id
-    private Long bookmarkSeq;
-    private String shortUrl;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long urlSeq;
+    @Getter
     private String longUrl;
-    @OneToOne(targetEntity = Domain.class)
-    private Long belongToDomain;
+    @Getter
+    private String shortUrl;
+    @ManyToOne(targetEntity = Domain.class)
+    private Domain domain;
 
-    public Url(String shortUrl, String longUrl, Long belongToDomain) {
-        this.shortUrl = shortUrl;
-        this.longUrl = longUrl;
-        this.belongToDomain = belongToDomain;
+    @ManyToOne(targetEntity = Bookmark.class)
+    private Bookmark bookmark;
+
+    public Url(Domain domain, Bookmark bookmark, UrlComponent urlComponent, String shortenPath) {
+        this.domain = domain;
+        this.bookmark = bookmark;
+        this.longUrl = urlComponent.original();
+        this.shortUrl = urlComponent.getShortenUrl(shortenPath);
     }
 }

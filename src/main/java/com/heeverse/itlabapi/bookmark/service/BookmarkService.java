@@ -20,6 +20,6 @@ public class BookmarkService {
 
     public Bookmark findBookmark(String memberId) {
         return bookmarkRepository.findBookmarkByMemberId(memberId)
-                .orElseThrow(NotExistBookmarkException::new);
+                .orElseGet(() -> bookmarkRepository.save(new Bookmark(memberId)));
     }
 }
